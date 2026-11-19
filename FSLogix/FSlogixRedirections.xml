@@ -17,7 +17,6 @@
     <Exclude Copy="0">AppData\Local\Comms</Exclude>
     <Exclude Copy="0">AppData\Local\Deployment</Exclude>
     <Exclude Copy="0">AppData\Local\FSLogix</Exclude>
-    <Exclude Copy="0">AppData\Local\Packages</Exclude>
     <Exclude Copy="0">AppData\Local\VirtualStore</Exclude>
     <Exclude Copy="0">AppData\Local\CrashDumps</Exclude>
     <Exclude Copy="0">AppData\Local\Package Cache</Exclude>
@@ -61,14 +60,12 @@
 <Exclude Copy="0">AppData\Local\Microsoft\OneNote\16.0\cache</Exclude>
 <Exclude Copy="0">AppData\Local\Microsoft\Office\SolutionPackages</Exclude>
 <Exclude Copy="0">AppData\Local\Microsoft\Office\16.0\Lync\Tracing</Exclude>
-<Exclude Copy="0">AppData\Local\Microsoft\Teams\Current\Locales</Exclude>
-<Exclude Copy="0">AppData\Local\Microsoft\Teams\Packages\SquirrelTemp</Exclude>
-<Exclude Copy="0">AppData\Local\Microsoft\Teams\current\resources\locales</Exclude>
-<Exclude Copy="0">AppData\Roaming\Microsoft\Teams\Service Worker\CacheStorage</Exclude>
-<Exclude Copy="0">AppData\Roaming\Microsoft\Teams\Application Cache</Exclude>
-<Exclude Copy="0">AppData\Roaming\Microsoft\Teams\Cache</Exclude>  
-<Exclude Copy="0">AppData\Roaming\Microsoft Teams\Logs</Exclude>
+<!-- Teams: Microsoft-recommended exclusions (learn.microsoft.com/fslogix/tutorial-redirections-xml). AppData\Local\Packages must stay in the container (new Teams, Entra/WAM tokens, new Outlook). -->
 <Exclude Copy="0">AppData\Roaming\Microsoft\Teams\media-stack</Exclude>
+<Exclude Copy="0">AppData\Local\Microsoft\Teams\meeting-addin\Cache</Exclude>
+<Exclude Copy="0">AppData\Local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\Logs</Exclude>
+<Exclude Copy="0">AppData\Local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\PerfLogs</Exclude>
+<Exclude Copy="0">AppData\Local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\EBWebView\WV2Profile_tfw\WebStorage</Exclude>
 <!-- Edge: exclude caches only. The profile itself (history, favourites, passwords) must stay in the container. -->
 <Exclude Copy="0">AppData\Local\Microsoft\Edge\User Data\Default\Cache</Exclude>
 <Exclude Copy="0">AppData\Local\Microsoft\Edge\User Data\Default\Code Cache</Exclude>
